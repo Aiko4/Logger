@@ -1,0 +1,37 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/logout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="30dp"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@color/black">
+
+    <ImageView
+        android:id="@+id/pingu"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/adius_pingu"/>
+
+    <TextView
+        android:id="@+id/goodbye"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="Succesfully logged out"
+        android:textColor="@color/white"
+        android:textAlignment="center"
+        android:textSize="30sp"/>
+
+    <Button
+        android:id="@+id/login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="LOG IN"
+        android:textSize="20sp"
+        android:backgroundTint="@color/orange"
+        android:textColor="@color/black"/>
+  </LinearLayout>

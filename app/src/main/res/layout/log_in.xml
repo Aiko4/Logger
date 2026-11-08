@@ -1,0 +1,111 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="30dp"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@color/black">
+
+    <ImageView
+        android:id="@+id/pingu"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/holi_pingu"/>
+
+    <TextView
+        android:id="@+id/loggerTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Log In"
+        android:textColor="@color/white"
+        android:textSize="40sp"
+        android:layout_marginBottom="50sp"/>
+
+    <LinearLayout
+        android:id="@+id/usernameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/userTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Username: "
+            android:layout_marginEnd="20dp"
+            android:textColor="@color/white"
+            android:textSize="20sp"/>
+
+        <EditText
+            android:id="@+id/userCredential"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Enter username here"
+            android:textStyle="italic"
+            android:textColorHint="@color/brokenWhite"
+            android:textColor="@color/white"
+            android:textSize="15sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/passwordLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/passTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Password: "
+            android:layout_marginEnd="20dp"
+            android:textColor="@color/white"
+            android:textSize="20sp"/>
+
+        <EditText
+            android:id="@+id/passCredential"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:hint="Enter password here"
+            android:textStyle="italic"
+            android:textColorHint="@color/brokenWhite"
+            android:textColor="@color/white"
+            android:textSize="15sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/buttonLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:text="LOG IN"
+            android:textSize="20sp"
+            android:backgroundTint="@color/orange"
+            android:textColor="@color/black"/>
+
+        <!-- visibility="invisible" el fa invisible (nomes hauria de ser visible si no s'introdueixen els camps) -->
+        <TextView
+            android:id="@+id/error"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_marginTop="50dp"
+            android:visibility="invisible"
+            android:textColor="@color/brightRed"
+            android:background="@color/red"/>
+
+    </LinearLayout>
+
+</LinearLayout>
